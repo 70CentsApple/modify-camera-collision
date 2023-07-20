@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.modify-camera-collision.title": "Modify Camera Collision",
+  "text.autoconfig.modify-camera-collision.option.forceEnableCollisionList": "Force Enable Collision List",
+  "text.autoconfig.modify-camera-collision.option.forceEnableCollisionList.@Tooltip": "List of blocks that should force enable collision.\nThese strings should be an identifier\nin the format \"{namespace}:{path}\",\ne.g. minecraft:glass",
+  "text.autoconfig.modify-camera-collision.option.disableCollisionForAllBlocks": "Disable Collision For All Blocks",
+  "text.autoconfig.modify-camera-collision.option.disableCollisionForAllBlocks.@Tooltip": "Disable collision for all blocks.",
+  "text.autoconfig.modify-camera-collision.option.forceDisableCollisionList": "Force Disable Collision List",
+  "text.autoconfig.modify-camera-collision.option.forceDisableCollisionList.@Tooltip": "List of blocks that should force disable collision.\nThese strings should be an identifier\nin the format \"{namespace}:{path}\",\ne.g. minecraft:barrier"
+}
