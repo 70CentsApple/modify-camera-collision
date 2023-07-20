@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "modify-camera-collision",
+	"version": "${version}",
+
+	"name": "Modify Camera Collision",
+	"description": "Change how your camera collision works in third-person view!",
+	"authors": [
+		"70CentsApple"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/modify-camera-collision",
+		"sources": "https://github.com/70CentsApple/modify-camera-collision",
+		"issues": "https://github.com/70CentsApple/modify-camera-collision/issues",
+		"bilibili": "https://space.bilibili.com/442361724"
+	},
+
+	"license": "GPL-3.0",
+	"icon": "icon.png",
+
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"net.apple70cents.ModifyCameraCollision.ModifyCameraCollision"
+		],
+		"modmenu": [
+			"net.apple70cents.ModifyCameraCollision.config.ModMenuScreen"
+		]
+	},
+	"mixins": [
+		"modify-camera-collision.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.13.3",
+		"minecraft": "1.19.x",
+		"java": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.modrinth": "https://modrinth.com/mod/modify-camera-collision"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.modify-camera-collision.title": "修改相机碰撞",
+  "text.autoconfig.modify-camera-collision.option.forceEnableCollisionList": "强制启用碰撞",
+  "text.autoconfig.modify-camera-collision.option.forceEnableCollisionList.@Tooltip": "强制启用碰撞的方块列表。\n这些字串应该是一个修饰符，也就是\"{命名空间}:{路径}\"，\n例如 minecraft:glass",
+  "text.autoconfig.modify-camera-collision.option.disableCollisionForAllBlocks": "强制禁用所有方块的碰撞",
+  "text.autoconfig.modify-camera-collision.option.disableCollisionForAllBlocks.@Tooltip": "强制禁用所有方块的碰撞\n§6《Camera NoClip》§r",
+  "text.autoconfig.modify-camera-collision.option.forceDisableCollisionList": "强制禁用碰撞",
+  "text.autoconfig.modify-camera-collision.option.forceDisableCollisionList.@Tooltip": "强制禁用碰撞的方块列表。\n这些字串应该是一个修饰符，也就是\"{命名空间}:{路径}\"，\n例如 minecraft:barrier"
+}
