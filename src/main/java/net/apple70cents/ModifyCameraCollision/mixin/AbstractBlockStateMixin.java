@@ -5,8 +5,8 @@ import net.apple70cents.ModifyCameraCollision.config.ModConfig;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -26,11 +26,11 @@ public abstract class AbstractBlockStateMixin {
     private void modify(BlockView world, BlockPos pos, ShapeContext context, CallbackInfoReturnable<VoxelShape> cir) {
         ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
         // if the block should NOT look through returns VoxelShapes.fullCube()
-        if (config.forceEnableCollisionList.contains(Registry.BLOCK.getId(this.getBlock()).toString()))
+        if (config.forceEnableCollisionList.contains(Registries.BLOCK.getId(this.getBlock()).toString()))
             cir.setReturnValue(VoxelShapes.fullCube());
 
         // if the block should look through returns VoxelShapes.empty()
-        if (config.disableCollisionForAllBlocks || config.forceDisableCollisionList.contains(Registry.BLOCK.getId(this.getBlock()).toString()))
+        if (config.disableCollisionForAllBlocks || config.forceDisableCollisionList.contains(Registries.BLOCK.getId(this.getBlock()).toString()))
             cir.setReturnValue(VoxelShapes.empty());
 
     }
